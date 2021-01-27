@@ -1,5 +1,6 @@
 .navigation {
     list-style: none;
+    padding: 0; 
 }
 
 .navigation-link {
@@ -24,4 +25,10 @@
     font-weight: 900;
     font-size: 14px;
     line-height: 20px;
+    display: flex;
+    align-items: center;
+    cursor:pointer;
+}
+.button-icon {
+    margin-right: 10px;
 }
