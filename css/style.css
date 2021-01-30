@@ -26,6 +26,10 @@ body {
     color: #939699;
     letter-spacing: 0.5px;
 }
+.navigation-link:hover {
+    text-decoration: underline;
+    color: #000;
+}
 .button {
     padding: 10px 20px;
     background: #4592FF;
@@ -40,6 +44,9 @@ body {
     display: flex;
     align-items: center;
     cursor:pointer;
+}
+.button:hover {
+    background-color: #3DC47E;
 }
 .button-icon, .button-price {
     margin-right: 10px;
@@ -177,6 +184,9 @@ body {
     color: #262D33;
     padding: 10px;
 }
+.more:hover {
+    color: rgba(38, 152, 245, 0.548);
+}
 .goods-card {
     position: relative;
     text-align: center;
@@ -229,6 +239,10 @@ body {
     font-weight: 900;
     font-size: 14px;
     line-height: 20px;
+}
+.footer-menu-link:hover {
+    text-decoration: underline;
+    color: #1ed5db;
 }
 .social-link {
     text-decoration: none;
