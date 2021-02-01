@@ -259,6 +259,7 @@ body {
 .top-link {
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 .top-link-text {
     margin-right: 15px;
