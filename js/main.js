@@ -21,11 +21,17 @@ const swiper = new Swiper('.swiper-container', {
     },
   });
 
-  function ScrollUp(){
-    let t,s;
-    s = document.body.scrollTop||window.pageYOffset;
-    t = setInterval(function()
-    {
-      if(s > 0)window.scroll(0, s-=5);
-      else clearInterval(t)},0.5);
-    }
+
+  // плавная прокрутка вверх
+  const anchors = document.querySelectorAll('a[href*="#"]')
+
+  for (let anchor of anchors) {
+      anchor.addEventListener("click", function(event) {
+          event.preventDefault();
+          const blockID = anchor.getAttribute('href')
+          document.querySelector('' + blockID).scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+          })
+      })
+  }
